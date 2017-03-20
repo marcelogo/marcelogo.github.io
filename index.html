@@ -1,0 +1,245 @@
+
+<html>
+
+
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bungee+Shade|Dancing+Script|Doppio+One|Fredericka+the+Great|Griffy|Jim+Nightshade|Kranky|Lobster|Megrim|Pacifico|Rock+Salt" rel="stylesheet">
+
+<style>
+
+body {
+    background-color: white;
+}
+
+
+.color-choice {
+    height: 30px;
+    width: 50px;
+    display: inline-block;
+}
+
+.u-ieMinHeightBugFix {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.card {
+    padding: 150px 250px;
+    background: hsla(31,15%,50%,.1);
+    border-radius: 3px;
+    font-size: 75px;
+    font-weight: 400;
+    background-color: #F9D423;
+    color: #006E00;
+    font-family: 'Griffy', cursive;
+    
+}
+
+.Aligner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    min-height: 24em;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.Aligner-item--fixed {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    flex: none;
+    
+}
+
+.font-color-yellow1 {
+    color: #FFDC00 !important;
+}
+
+.bg-yellow1 {
+    background-color: #FFDC00 !important;
+}
+
+
+.font-color-yellow2 {
+    color: #F9D423 !important;
+}
+
+.bg-yellow2 {
+    background-color: #F9D423 !important;
+}
+
+.font-color-green1 {
+    color: #2ECC40 !important;
+}
+
+.bg-green1 {
+    background-color: #2ECC40 !important;
+}
+
+.font-color-green2 {
+    color: #006E00 !important;
+}
+
+.bg-green2 {
+    background-color: #006E00 !important;
+}
+
+.font-type-1 {
+    font-family: 'Griffy', cursive;
+}
+
+.font-type-2 {
+    font-family: 'Jim Nightshade', cursive;
+}
+
+.font-type-3 {
+    font-family: 'Lobster', cursive;
+}
+
+.font-type-4 {
+    font-family: 'Pacifico', cursive;
+    }
+
+.font-type-5 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.font-type-6 {
+    font-family: 'Amatic SC', cursive;
+}
+
+.font-type-7 {
+    font-family: 'Rock Salt', cursive;
+}
+
+.font-type-8 {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.font-type-9 {
+    font-family: 'Kranky', cursive;
+}
+
+.font-type-10 {
+    font-family: 'Bungee Shade', cursive;
+}
+
+.font-type-11 {
+    font-family: 'Megrim', cursive;
+}
+
+
+.config {
+    margin-top: 200px;
+    font-family: 'Doppio One', sans-serif;
+}
+
+.config-color {
+    display: inline-block;
+}
+
+.config-bg {
+    float: left;
+}
+
+.config-font-color {
+    float: right;
+}
+
+
+.config-font {
+    display: block;
+}
+
+.config-font > div{
+    display: inline-block;
+    padding: 5px;
+
+}
+
+
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+
+<script type="text/javascript">
+function changeBG(newColor){
+    removeClasses('bg');
+    $(".card").removeClass().addClass('card').addClass('bg-' + newColor);
+}
+
+function changeColor(newColor){
+    removeClasses('font-color-');
+    $(".card").addClass('font-color-' + newColor);
+}
+
+function changeFont(newFont){
+    removeClasses('font-type-');
+    $(".card").addClass('font-type-' + newFont);
+}
+
+function removeClasses(type){
+    var classes = $(".card").attr('class').split(' ');
+
+    $.each(classes, function(i, c){
+        if (c.indexOf(type) > -1){
+            $('.card').removeClass(c);
+        }
+    });
+}
+</script>
+<body>
+    
+        <div class="Aligner">
+            <div class="Aligner-item Aligner-item--fixed">
+                <div class="card">
+                    Ziriguidum
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="config">
+                <div class="config-color config-bg">
+                    Cartao 
+                    <div class="color-choice bg-yellow1" onClick="changeBG('yellow1')"></div>
+                    <div class="color-choice bg-yellow2" onClick="changeBG('yellow2')"></div>
+                    <div class="color-choice bg-green1" onClick="changeBG('green1')"></div>
+                    <div class="color-choice bg-green2" onClick="changeBG('green2')"></div>
+                </div>
+                <div class="config-color config-font-color">
+                    <div class="color-choice bg-yellow1" onClick="changeColor('yellow1')"></div>
+                    <div class="color-choice bg-yellow2" onClick="changeColor('yellow2')"></div>
+                    <div class="color-choice bg-green1" onClick="changeColor('green1')"></div>
+                    <div class="color-choice bg-green2" onClick="changeColor('green2')"></div>
+                    Letra 
+                </div>
+                <div class="config-font">
+                    <div class="font-type-1" onClick="changeFont('1')">Ziriguidum</div>
+                    <div class="font-type-2" onClick="changeFont('2')">Ziriguidum</div>
+                    <div class="font-type-3" onClick="changeFont('3')">Ziriguidum</div>
+                    <div class="font-type-4" onClick="changeFont('4')">Ziriguidum</div>
+                    <div class="font-type-5" onClick="changeFont('5')">Ziriguidum</div>
+                    <div class="font-type-6" onClick="changeFont('6')">Ziriguidum</div>
+                    <div class="font-type-7" onClick="changeFont('7')">Ziriguidum</div>
+                    <div class="font-type-8" onClick="changeFont('8')">Ziriguidum</div>
+                    <div class="font-type-9" onClick="changeFont('9')">Ziriguidum</div>
+                    <div class="font-type-10" onClick="changeFont('10')">Ziriguidum</div>
+                    <div class="font-type-11" onClick="changeFont('11')">Ziriguidum</div>
+                </div>
+               
+        </div>
+       
+
+</body>
+
+<html>
