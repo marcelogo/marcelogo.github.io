@@ -769,7 +769,7 @@ h6 {
 .section-heading h3 {
     font-size: 14px;
     font-weight: bold;
-    color: #ccc;
+    color: #c88034;
     letter-spacing: 2px;
     padding-bottom: 0;
 }
@@ -2327,11 +2327,6 @@ blockquote {
 
 }
 
-
-#description {
-    padding-bottom: 30px;
-
-}
 
 .map {
     height: 500px;
