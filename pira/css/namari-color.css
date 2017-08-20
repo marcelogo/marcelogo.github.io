@@ -11,7 +11,14 @@
 
 /*------------------------------------------------------------------------------------------*/
 /* 1. Website Default Styling */
-/*------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------
+Marrom escuro [fonte e fundo] | R:34  G:31  B:33  #221f21 
+
+Bege Claro [fontes texto] | R:237  G:207  B:176 #edcfb0
+
+Amarelo [fontes texto] | R:202  G:125  B:39  #ca7d27  
+
+-*/
 
 
 body {
@@ -22,11 +29,11 @@ body {
 /* Default Link Color */
 
 a, .la-ball-triangle-path {
-    color:#e7729e;
+    color:#ca7d27;
 }
 
 a:hover, #header.nav-solid nav a:hover {
-    color:#e7729e;
+    color:#ca7d27;
 }
 
 /* Default Icon Color */
@@ -96,19 +103,27 @@ a:hover, #header.nav-solid nav a:hover {
 
 .secondary-color {
     background-color:#f5f5f5;
-	background-color: #231e22;
+	background-color: #221f21;
 	color: #c5ac9b!important;
 }
 
 .secondary-color .section-heading h2, .secondary-color .section-heading h4 {
-	color: #c5ac9b;
+	color: #edcfb0;
 }
 
  .section-heading h3 {
-	color: #c88034;
+	color: #ca7d27  ;
 }
 
-/* amarelo #c88034 *?
+/* amarelo #c88034 
+
+Marrom escuro [fonte e fundo] | R:34  G:31  B:33  #221f21 
+
+Bege Claro [fontes texto] | R:237  G:207  B:176 #edcfb0
+
+Amarelo [fontes texto] | R:202  G:125  B:39  #ca7d27  
+
+*/
 
 
 /*------------------------------------------------------------------------------------------*/
