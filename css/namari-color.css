@@ -362,3 +362,12 @@ h6 {
     font-family: 'AvantGardeGothic';
     color: #ca7d27  ;
 }
+
+P.calendar {
+font-family: 'AvantGardeGothic';
+    font-size: 18px;
+}
+
+P.calendar > span {
+	color: #ca7d27;
+}
