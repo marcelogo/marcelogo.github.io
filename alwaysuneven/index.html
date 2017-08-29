@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900" rel="stylesheet" />
+<style>
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+
+
+.rotate {
+
+position: absolute;
+
+transform: rotate(15deg);
+/* Safari */
+-webkit-transform: rotate(15deg);
+
+/* Firefox */
+-moz-transform: rotate(15deg);
+
+/* IE */
+-ms-transform: rotate(15deg);
+
+/* Opera */
+-o-transform: rotate(15deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+
+
+}
+
+.outer {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+@media (max-width: 450px) {
+    .outer {
+        margin-left: 25px;
+    }
+}
+
+.logo {
+    background: black;
+    color: white;
+    padding: 15px;
+    width: 82px;
+}
+
+.dragme {
+    position: relative;
+    left: 64px;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    font-weight: bold;
+
+    background: linear-gradient(293deg, #f31b1b, #ecce28);
+    background-size: 300% 300%;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="outer">
+    <div class="logo">
+        <div class="cinzela">ALWAYS</div>
+        <div class="days">
+            <span>U</span><span class="rotate">N</span><span class="dragme">EVEN</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
