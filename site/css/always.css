@@ -26,6 +26,25 @@
     background-size: 300% 300%;
 }
 
+.crazy-orange-side {
+    background: linear-gradient(260deg, #f31b1b, #ecce28);
+    background-size: 200% 200%;
+}
+
+
+.side-logo {
+    width: 50%;
+}
+
+@media (min-width: 48em) {
+    .side-logo {
+        position: fixed; 
+        width: 30%;   
+    }
+
+}
+
+
 /*
  * -- BASE STYLES --
  * Most of these are inherited from Base, but I want to change a few.
@@ -220,7 +239,7 @@ a.pure-button-primary {
 }
 
 /* We want to give the content area some more padding */
-.content {
+.main-content {
     padding: 1em 1em 3em;
 }
 
@@ -238,13 +257,13 @@ a.pure-button-primary {
 }
 
 /* This is the class used for the content sub-headers (<h3>) */
-.content-subhead {
+/*.content-subhead {
     color: #bd4f4f;
 }
     .content-subhead i {
         margin-right: 7px;
     }
-
+*/
 /* This is the class used for the dark-background areas. */
 .ribbon {
     background: #2d3e50;
@@ -320,4 +339,38 @@ a.pure-button-primary {
     .pure-img {
         max-width: 50%;
     }
+}
+
+
+.content {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+}
+
+.header {
+     margin: 0;
+     color: #333;
+     text-align: center;
+     padding: 2.5em 2em 0;
+     border-bottom: 1px solid #eee;
+ }
+    .header h1 {
+        margin: 0.2em 0;
+        font-size: 3em;
+        font-weight: 300;
+    }
+     .header h2 {
+        font-weight: 300;
+        color: #ccc;
+        padding: 0;
+        margin-top: 0;
+    }
+
+.content-subhead {
+    margin: 50px 0 20px 0;
+    font-weight: 300;
+    color: #888;
 }
