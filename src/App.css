@@ -1,0 +1,10 @@
+.App {
+  background-color: white;
+  height: 100vh;
+  color: black;
+}
+@media (max-width: 568px) {
+  .img-1 {
+    background-attachment: scroll;
+  }
+}

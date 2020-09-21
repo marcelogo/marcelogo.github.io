@@ -1,0 +1,132 @@
+[aos="arrow"] {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all;
+}
+[aos="arrow"].aos-animate {
+  opacity: 1;
+}
+.home {
+  /* background-color: black; */
+  padding: 7rem 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "section-2"
+    "section-1";
+  justify-content: left;
+  align-items: flex-start;
+  /* gap: 2rem; */
+  color: black;
+  overflow: hidden;
+  height: 100vh;
+}
+.section-home-1 {
+  position: relative;
+  grid-area: section-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section-home-2 {
+  grid-area: section-2;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.section-home-1 h1 {
+  color: nav(--navColor1);
+  margin-top: 1rem;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  line-height: 0.5;
+  text-shadow: none;
+}
+.section-home-1 .logo {
+  color: var(--navColor2);
+}
+.section-home-1 .underscore {
+  position: absolute;
+  top: 55%;
+  background-color: var(--navColor2);
+  height: 2px;
+  width: 80px;
+}
+.section-home-1 .home-description {
+  margin-top: 5rem;
+  width: 76%;
+  color: #5a5a5a;
+}
+.home-img {
+  width: 250px;
+  background-size: 240px;
+  background-position: top;
+  height: 250px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 700px) {
+  .home {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "section-1 section-2";
+    padding: 0;
+    height: 100vh;
+  }
+  .section-home-1 {
+    height: 100vh;
+  }
+  .section-home-2 {
+    border-left: 5px solid white;
+    max-width: 50vw;
+    display: block;
+  }
+  .home-img {
+    width: 100%;
+    max-width: 1000px;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0;
+  }
+  .responsive {
+    width: 130%;
+    height: auto;
+  }
+  .section-home-1 h1 {
+    text-shadow: none;
+    color: var(--navColor1);
+    letter-spacing: 2px;
+    font-size: 7rem;
+    line-height: 0.8;
+  }
+  .section-home-1 .family-name {
+    /* position: absolute;
+    top: 124px; */
+    /* left: 67px; */
+  }
+  .section-home-1 .underscore {
+    display: none;
+  }
+  .section-home-1 .home-description {
+    font-size: 1.3rem;
+    /* margin-top: 11rem; */
+  }
+}
+@media screen and (min-width: 1441px) {
+  .section-home-1 .underscore {
+    position: absolute;
+    top: 32vh;
+    background-color: var(--navColor2);
+    height: 6px;
+    width: 160px;
+    /* margin: 5.4rem 0.5rem; */
+  }
+  .section-home-1 h1 {
+    font-size: 9rem;
+  }
+  .section-home-1 .home-description {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,788 @@
+@media screen and (min-width: 320px) {
+  .projects-cc {
+    overflow: hidden;
+  }
+  .project-wrapper {
+    padding: 1rem 1.2rem;
+    height: 1100px;
+    overflow: hidden;
+  }
+  .project-container {
+    border-top: 1px solid black;
+    margin-top: 2.9rem;
+    padding: 1.5rem 0;
+    position: relative;
+  }
+  .project-container p {
+    font-size: 0.8rem;
+  }
+  .github-icon-front-end {
+    position: absolute;
+    top: -45px;
+    font-size: 1.7rem;
+    padding-left: 4px;
+    text-shadow: 0 0.3px 0.5px rgba(10, 10, 10, 0.491);
+  }
+  .github-icon-back-end {
+    position: absolute;
+    top: -45px;
+    left: 35px;
+    font-size: 1.7rem;
+    padding-left: 4px;
+    text-shadow: 0 0.3px 0.5px rgba(10, 10, 10, 0.491);
+  }
+  .git-hub-description-back-end {
+    display: none;
+  }
+  .git-hub-description-front-end {
+    display: none;
+  }
+  .project-container h1 {
+    margin-top: 3rem;
+    font-size: 2.2rem;
+  }
+  .project-description {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .project-description p {
+    font-size: 1rem;
+    width: 82%;
+  }
+  .project-description h2 {
+    text-shadow: 0 0.3px 0.5px rgba(10, 10, 10, 0.491);
+    margin: 2rem 0;
+  }
+
+  .scroll-down-icon-cc {
+    position: absolute;
+    width: 20px;
+    left: 0;
+    top: 70px;
+  }
+  .solution-cc {
+    position: absolute;
+    bottom: -10vh;
+    /* right: 2vh; */
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* width: 90%; */
+  }
+  .solution-cc p {
+    margin: 0;
+    font-size: 1rem;
+    width: 100%;
+  }
+  .frontend {
+    position: relative;
+    background-color: rgba(91, 86, 86, 0.656);
+    overflow: hidden;
+    /* width: 100%; */
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+  }
+  .img-front-sml {
+    display: block;
+    position: relative;
+    background-position: center;
+    /* background-size: 1000px; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .img-front-lg {
+    display: none;
+  }
+
+  .front-end-specs {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 150vh;
+    padding: 15rem 10rem 10rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 10rem;
+    background-color: #040f17a5;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 3px;
+  }
+  .front-end-specs h2 {
+    font-size: 4rem;
+    color: white;
+    line-height: 6rem;
+    text-shadow: 0 0 1px rgb(255, 255, 255);
+  }
+  .front-end-specs .front-end-underscore {
+    width: 10%;
+    height: 2px;
+    background-color: #fff;
+    animation: navigate 1s infinite;
+    margin: 0 0 2rem 0.7rem;
+  }
+  @keyframes navigate {
+    0% {
+      opacity: 0;
+    }
+    65% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .front-end-specs ul {
+    position: absolute;
+    top: 370px;
+    right: 2vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .front-end-specs li {
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.834);
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .front-end-specs li:hover {
+    transform: scale(1.2);
+    color: white;
+  }
+  .description-active {
+    transform: scale(1.2);
+    color: white;
+    font-weight: bold;
+  }
+  .front-end-specs .underscore-li {
+    margin: 1rem auto;
+    height: 1px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.601);
+  }
+  .react-lg {
+    display: none;
+  }
+  ul img {
+    width: 30px;
+    margin: 0 auto;
+  }
+  .features-description {
+    position: absolute;
+    bottom: 40vh;
+    left: 5vw;
+    /* padding: 10rem; */
+    width: 60%;
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.669); */
+  }
+  .features-description p {
+    font-size: 1.2rem;
+  }
+
+  /* starting ENTER animation */
+  .messageout-enter {
+    opacity: 0.01;
+    transform: translateY(0%) scale(0.01);
+  }
+
+  /* ending ENTER animation */
+  .messageout-enter-active {
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+    transition: all 0.8s ease-in-out;
+  }
+
+  /* starting EXIT animation */
+  .messageout-exit {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1.01);
+  }
+
+  /* ending EXIT animation */
+  .messageout-exit-active {
+    opacity: 0;
+    transform: scale(8);
+    filter: blur(50px);
+    transition: all 0.8s ease-in-out;
+  }
+  .backend {
+    position: relative;
+    min-height: 500px;
+  }
+  .backend-title {
+    z-index: 2;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    left: -2px;
+    top: 182px;
+  }
+
+  .backend h2 {
+    /* transform: rotate(270deg); */
+    text-shadow: 0 0.3px 0.5px rgba(10, 10, 10, 0.491);
+    font-size: 3rem;
+    color: var(--navColor1);
+    position: absolute;
+    top: -22rem;
+    left: 4.8rem;
+    width: 300px;
+  }
+
+  .phone-sizes-container {
+    margin: 15rem 0 0 0;
+    background-color: white;
+    /* min-height: 600px; */
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    overflow: hidden;
+  }
+  .phone {
+    margin: 0 auto;
+    background-color: var(--navColor1);
+    padding: 40px 0.5px;
+    width: 220px;
+    height: 518px;
+    display: grid;
+    justify-content: center;
+    border-radius: 25px;
+  }
+  .phone img {
+    width: 207px;
+  }
+  .backend-menu {
+    background-color: var(--navColor1);
+    color: white;
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    bottom: -250px;
+    /* left: 5%; */
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+    padding: 2rem 0 6rem 0;
+    line-height: 30px;
+  }
+  .backend-menu p {
+    color: var(--navColor2);
+  }
+  .backend-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  .backend-menu li {
+    padding: 0 5px;
+  }
+  .backend-information {
+    padding: 20rem 2rem 0 2rem;
+    /* min-height: 800px; */
+    /* margin-bottom: 10rem; */
+  }
+  .backend-information .focus {
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding-bottom: 2.5rem;
+  }
+  .backend-information h2 {
+    /* font-size: 2.3rem; */
+    text-shadow: 0 0.3px 0.5px rgba(10, 10, 10, 0.491);
+    padding: 4rem 0 2rem 0;
+    margin-top: 1rem;
+    width: 60%;
+    /* text-shadow: 0 0 1px black; */
+  }
+  .backend-logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+  }
+  .backend-image {
+    display: none;
+    width: 200px;
+  }
+  .coming-soon {
+    display: block;
+    margin-top: 50px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 2px;
+    max-width: 150px;
+    background: #252a2e22;
+    border: 1px solid #252a2e22;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    box-shadow: 0 2px 6px #252a2e22;
+    text-shadow: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .hvr-icon-push {
+    z-index: 0;
+  }
+  .projects-cc {
+    overflow: hidden;
+  }
+  .project-wrapper {
+    padding: 8rem 6rem 0 6rem;
+    min-height: 1200px;
+  }
+  .project-container {
+    border-top: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    padding: 1rem 0 4rem 0;
+    position: relative;
+  }
+  .coming-soon {
+    display: block;
+    margin-top: 50px;
+    max-width: 150px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 2px;
+    background: #252a2e22;
+    border: 1px solid #252a2e22;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    box-shadow: 0 2px 6px #252a2e22;
+  }
+  .github-icon-front-end {
+    position: absolute;
+    right: 45px;
+    top: 15px;
+    font-size: 2rem;
+    z-index: 8;
+  }
+  .git-hub-description-front-end {
+    display: initial;
+    position: absolute;
+    right: -32px;
+    top: 50px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 2px;
+    background: var(--navColor1);
+    color: white;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(10, 10, 10, 0.491);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  .github-icon-front-end:hover .git-hub-description-front-end {
+    visibility: visible;
+    opacity: 1;
+  }
+  .github-icon-back-end {
+    left: initial;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    font-size: 2rem;
+    z-index: 8;
+  }
+  .git-hub-description-back-end {
+    display: initial;
+    position: absolute;
+    right: -32px;
+    top: 50px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 2px;
+    background: var(--navColor1);
+    color: white;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(10, 10, 10, 0.491);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  .github-icon-back-end:hover .git-hub-description-back-end {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .project-container h1 {
+    margin-top: 2rem;
+    font-size: 8rem;
+    text-shadow: 0 0 1px black;
+  }
+
+  .project-description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+  .project-description h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    /* text-shadow: 0 0 1px black; */
+  }
+  .project-description p {
+    font-size: 1.1rem;
+    /* padding: 1rem; */
+  }
+  .project-description div:nth-child(2) {
+    padding-right: 5rem;
+  }
+  .scroll-down-icon-cc {
+    position: absolute;
+    width: 25px;
+    left: -686px;
+    top: 432px;
+  }
+  .frontend {
+    position: relative;
+    background-color: rgba(91, 86, 86, 0.121);
+    overflow: hidden;
+    /* width: 98.9vw; */
+    min-height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+  }
+  .img-1 {
+    position: relative;
+    background-position: center;
+    /* background-size: 1000px; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .img-1 {
+    min-height: 100%;
+    width: 100%;
+  }
+  .front-end-specs {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    min-height: 1300px;
+    padding: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 10rem;
+    background-color: #040f17ae;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 3px;
+  }
+  .front-end-specs h2 {
+    font-size: 10rem;
+    color: white;
+    line-height: 9rem;
+    text-shadow: 0 0 1px rgb(255, 255, 255);
+  }
+  .front-end-specs .front-end-underscore {
+    width: 10%;
+    height: 2px;
+    background-color: #fff;
+    animation: navigate 1s infinite;
+    margin: 0 0 2rem 0.7rem;
+  }
+  @keyframes navigate {
+    0% {
+      opacity: 0;
+    }
+    65% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .front-end-specs ul {
+    position: absolute;
+    top: 25vh;
+    right: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .front-end-specs li {
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.834);
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .front-end-specs li:hover {
+    transform: scale(1.2);
+    color: white;
+  }
+  .description-active {
+    transform: scale(1.2);
+    color: white;
+    font-weight: bold;
+  }
+  .front-end-specs .underscore-li {
+    margin: 1rem auto;
+    height: 1px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.601);
+  }
+  ul img {
+    width: 60px;
+    margin: 0 auto;
+  }
+  .features-description {
+    position: absolute;
+    bottom: 30%;
+    left: 1%;
+    padding: 10rem;
+    width: 50%;
+    color: white;
+  }
+  .features-description p {
+    font-size: 1.5rem;
+  }
+
+  /* starting ENTER animation */
+  .messageout-enter {
+    opacity: 0.01;
+    transform: translateY(0%) scale(0.01);
+  }
+
+  /* ending ENTER animation */
+  .messageout-enter-active {
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+    transition: all 0.8s ease-in-out;
+  }
+
+  /* starting EXIT animation */
+  .messageout-exit {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1.01);
+  }
+
+  /* ending EXIT animation */
+  .messageout-exit-active {
+    opacity: 0;
+    transform: scale(8);
+    filter: blur(50px);
+    transition: all 0.8s ease-in-out;
+  }
+  .backend {
+    position: relative;
+    min-height: 900px;
+  }
+  .backend h2 {
+    transform: rotate(270deg);
+    font-size: 5rem;
+    color: rgb(45, 45, 45);
+    position: static;
+    padding-left: 22rem;
+    width: 1000px;
+    overflow: hidden;
+  }
+  .phone-sizes-container {
+    position: absolute;
+    margin: 4rem 0 0 0;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .phone {
+    background-color: var(--navColor1);
+    padding: 40px 0.5px;
+    width: 300px;
+    height: 680px;
+    display: grid;
+    justify-content: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .phone img {
+    width: 97%;
+  }
+  .backend-menu {
+    background: white;
+    color: rgba(0, 0, 0, 0.717);
+    height: 10vh;
+    width: 90vw;
+    position: absolute;
+    bottom: -350px;
+    left: 5%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 4rem 0 5rem 0;
+    line-height: 25px;
+  }
+  .backend-menu p {
+    color: var(--navColor2);
+  }
+  .backend-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+  }
+  .backend-menu li {
+  }
+  .backend-information {
+    padding: 35rem 9rem 0 9rem;
+    height: 115vh;
+    margin-bottom: 20rem;
+  }
+  .backend-information .focus {
+    border-bottom: 1px solid black;
+    width: 35%;
+    padding-bottom: 2.5rem;
+  }
+  .backend-information h2 {
+    font-size: 2.3rem;
+    padding: 4rem 0 2rem 0;
+    margin-top: 1rem;
+    width: 20%;
+    /* text-shadow: 0 0 1px black; */
+  }
+  .backend-information p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .project-container-anu p {
+    font-size: 1.2rem;
+  }
+  .project-description-anu p {
+    font-size: 1.2rem;
+  }
+  .project-container p {
+    font-size: 1.2rem;
+  }
+  .backend-logo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+  }
+  .backend-image {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+  }
+  .end-cc {
+    position: absolute;
+    /* margin-top: 2rem; */
+    bottom: -3rem;
+    width: 15px;
+    height: 15px;
+    background-color: var(--navColor1);
+  }
+  .MyOverRideClass {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100px;
+    outline: none;
+  }
+  .img-front-lg {
+    display: block;
+  }
+  .img-front-sml {
+    display: none;
+  }
+  .react-sml {
+    display: none;
+  }
+  .react-lg {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .project-wrapper {
+    height: 1600px;
+  }
+  .projects-cc p {
+    font-size: 1.8rem;
+  }
+  .project-description h2 {
+    font-size: 2.3rem;
+  }
+  .project-description p {
+    /* font-size: 1rem; */
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .features-description {
+    bottom: 15%;
+    left: 1%;
+    width: 80%;
+  }
+  .features-description p {
+    font-size: 2.2rem;
+  }
+  .front-end-specs {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .front-end-specs h2,
+  .front-end-underscore {
+    position: absolute;
+    top: 400px;
+  }
+  .front-end-specs ul {
+    top: 50vh;
+    right: 10vw;
+  }
+  .front-end-specs li {
+    font-size: 1.8rem;
+  }
+  .backend-information {
+    padding: 40rem 9rem 0 9rem;
+    height: 115vh;
+  }
+  .coming-soon {
+    max-width: 180px;
+  }
+  p.coming-soon {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .features-description p {
+    font-size: 2.5rem;
+  }
+  .backend h2 {
+    font-size: 10rem;
+  }
+}

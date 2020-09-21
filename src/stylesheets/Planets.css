@@ -1,0 +1,200 @@
+@media screen and (min-width: 320px) {
+  .projects-planets {
+    overflow: hidden;
+  }
+  .project-wrapper-planets {
+    padding: 1rem 1.2rem;
+    min-height: 900px;
+  }
+  .project-container-planets {
+    border-top: 1px solid black;
+    margin-top: 2.9rem;
+    padding: 1.5rem 0;
+    position: relative;
+  }
+  .project-container-planets p {
+    font-size: 0.8rem;
+  }
+  .project-container-planets h1 {
+    margin-top: 2rem;
+    font-size: 2.2rem;
+  }
+  .github-icon-planets {
+    position: absolute;
+    top: -45px;
+    font-size: 1.7rem;
+    padding-left: 4px;
+  }
+  .git-hub-description-planets {
+    display: none;
+  }
+  .project-description-planets {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .project-description-planets p {
+    font-size: 1rem;
+    width: 82%;
+  }
+  .project-description-planets h2 {
+    font-size: 1.3rem;
+    margin: 2rem 0;
+  }
+  .scroll-down-icon-planets {
+    position: absolute;
+    width: 20px;
+    left: 0;
+    top: 210px;
+  }
+  .quotes-carousel {
+    position: absolute;
+    top: -10vh;
+    left: -10vw;
+
+    background-size: 160px;
+    /* opacity: 0.7; */
+    height: 80px;
+    width: 80px;
+  }
+  .carousel-h2 {
+    position: absolute;
+    width: 120px;
+    /* font-size: 1.2rem; */
+    top: -3.9vh;
+    left: 3.6vw;
+    font-style: italic;
+  }
+  .carousel-container-planets {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .carousel-planets {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    z-index: 1;
+  }
+  .carousel-img-planets {
+    margin: 0 auto 100px auto;
+    width: 100%;
+    box-shadow: 0 10px 10px #777;
+  }
+}
+@media screen and (min-width: 700px) {
+  .projects-planets {
+    overflow: hidden;
+  }
+  .project-wrapper-planets {
+    padding: 8rem 6rem 0 6rem;
+    height: 150vh;
+  }
+  .project-container-planets {
+    border-top: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    padding: 1rem 0 4rem 0;
+    position: relative;
+  }
+  .github-icon-planets {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    font-size: 2rem;
+  }
+  .git-hub-description-planets {
+    display: initial;
+    position: absolute;
+    right: -12px;
+    top: 50px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 2px;
+    background: var(--navColor1);
+    color: white;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(10, 10, 10, 0.491);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  .github-icon-planets:hover .git-hub-description-planets {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .project-container-planets h1 {
+    margin-top: 2rem;
+    font-size: 8rem;
+    text-shadow: 0 0 1px black;
+  }
+  .project-description-planets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin-top: 1rem;
+  }
+  .project-description-planets h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+  }
+  .project-container-planets p {
+    font-size: 1.2rem;
+  }
+  .project-description-planets p {
+    font-size: 1.2rem;
+  }
+  .scroll-down-icon-planets {
+    position: absolute;
+    width: 25px;
+    left: -65px;
+    top: 0;
+  }
+  .carousel-container-planets {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .carousel-planets {
+    position: absolute;
+    top: -300px;
+    width: 100%;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    z-index: 1;
+  }
+  .carousel-img-planets {
+    margin: 0 auto 100px auto;
+    width: 1000px;
+    box-shadow: 0 10px 10px #777;
+  }
+  .carousel-h2,
+  .underscore-carousel {
+    display: none;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .projects-planets p {
+    font-size: 1.8rem;
+  }
+  .project-description-planets h2 {
+    font-size: 2.3rem;
+    margin: 2rem 0;
+  }
+  .project-description-planets p {
+    /* font-size: 1rem; */
+    padding-top: 30px;
+    width: 100%;
+  }
+}

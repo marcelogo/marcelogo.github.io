@@ -1,0 +1,210 @@
+@media screen and (min-width: 320px) {
+  .project-wrapper-cube {
+    padding: 1rem 1.2rem;
+    height: 100vh;
+  }
+  .project-container-cube {
+    border-top: 1px solid black;
+    margin-top: 2.9rem;
+    padding: 1.5rem 0;
+    position: relative;
+  }
+  .project-container-cube P {
+    font-size: 0.8rem;
+  }
+  .project-container-cube h1 {
+    margin-top: 3rem;
+    font-size: 2.2rem;
+  }
+  .project-description-cube {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .github-icon-cube {
+    position: absolute;
+    top: -45px;
+    font-size: 1.7rem;
+    padding-left: 4px;
+    text-shadow: 0 0.3px 0.5px rgba(10, 10, 10, 0.491);
+  }
+  .link-icon-cube {
+    position: absolute;
+    top: -45px;
+    left: 35px;
+    font-size: 1.7rem;
+    padding-left: 4px;
+    text-shadow: 0 0.3px 0.5px rgba(10, 10, 10, 0.491);
+  }
+  .git-hub-description-cube {
+    display: none;
+  }
+  .link-description-cube {
+    display: none;
+  }
+  .project-description-cube h2 {
+    text-shadow: 0 0.3px 0.5px rgba(10, 10, 10, 0.491);
+    font-size: 1.3rem;
+    margin: 2rem 0;
+  }
+  .project-description-cube p {
+    font-size: 1rem;
+    width: 82%;
+  }
+  .frontend-cube {
+    position: relative;
+  }
+  .cube-it {
+    position: absolute;
+    top: 6vh;
+    right: 36%;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+  }
+  .cube-it:hover {
+    background-color: #f4f4f4;
+    color: black;
+  }
+}
+@media screen and (min-width: 700px) {
+  .project-wrapper-cube {
+    padding: 8rem 6rem 0 6rem;
+    min-height: 1000px;
+  }
+  .project-container-cube {
+    border-top: 1px solid black;
+    padding: 1rem 0 4rem 0;
+    position: relative;
+  }
+  .project-container-cube h1 {
+    margin-top: 2rem;
+    font-size: 7rem;
+  }
+  .project-container-cubeP {
+    font-size: 1.2rem;
+  }
+  .project-description-cubep {
+    font-size: 1.2rem;
+  }
+  .project-description-cube {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .github-icon-cube {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    font-size: 2rem;
+    z-index: 8;
+  }
+  .git-hub-description-cube {
+    display: initial;
+    position: absolute;
+    right: -19px;
+    top: 50px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 2px;
+    background: var(--navColor1);
+    color: white;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(10, 10, 10, 0.491);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  .github-icon-cube:hover .git-hub-description-cube {
+    visibility: visible;
+    opacity: 1;
+  }
+  .link-icon-cube {
+    position: absolute;
+    right: 45px;
+    left: initial;
+    top: 15px;
+    font-size: 2rem;
+    z-index: 8;
+  }
+  .link-description-cube {
+    display: initial;
+    position: absolute;
+    right: -23px;
+    top: 50px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 2px;
+    background: var(--navColor1);
+    color: white;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(10, 10, 10, 0.491);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  /* .fa-link:hover {
+    color: var(--navColor1);
+  } */
+  .link-icon-cube:hover .link-description-cube {
+    visibility: visible;
+    opacity: 1;
+  }
+  .project-description-cube h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    /* text-shadow: 0 0 1px black; */
+  }
+  .project-container-cube p {
+    font-size: 1.2rem;
+  }
+  .project-description-cube p {
+    font-size: 1.2rem;
+  }
+  .project-description-cube div:nth-child(2) {
+    padding-right: 5rem;
+  }
+  .frontend-cube {
+    position: relative;
+    /* background-color: var(--navColor1); */
+    /* overflow: hidden; */
+    width: 98.9vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 4rem;
+  }
+  .cube-it {
+    position: absolute;
+    top: -16vh;
+    right: 32vh;
+    font-size: 2.5rem;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .projects-cube p {
+    font-size: 1.8rem;
+  }
+  .project-description-cube h2 {
+    font-size: 2.3rem;
+    margin: 2rem 0;
+  }
+  .project-description-cube p {
+    /* font-size: 1rem; */
+    padding-top: 30px;
+    width: 100%;
+  }
+}

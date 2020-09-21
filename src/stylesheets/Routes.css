@@ -1,0 +1,132 @@
+/* === Menu Bars === */
+@media screen and (min-width: 320px) {
+  .menu-bars {
+    position: fixed;
+    top: 1%;
+    right: 3.8%;
+    z-index: 10;
+    display: inline;
+    cursor: pointer;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    transition: 0.5s;
+    /* -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0); */
+    overflow: hidden;
+    background: #f4f4f4e1;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .menu-bars:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--navColor1);
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .menu-bars:hover .bar1,
+  .menu-bars:focus .bar1,
+  .menu-bars:active .bar1,
+  .menu-bars:hover .bar2,
+  .menu-bars:focus .bar2,
+  .menu-bars:active .bar2 {
+    background-color: white;
+  }
+
+  .menu-bars:hover:before,
+  .menu-bars:focus:before,
+  .menu-bars:active:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+  .bar1 {
+    margin-top: 1rem;
+  }
+  .bar2 {
+    margin-bottom: 1rem;
+  }
+  .bar1,
+  .bar2 {
+    width: 20px;
+    height: 1px;
+    background-color: var(--navColor1);
+    transition: 0.4s;
+    box-shadow: 0 0.3px 0.5px rgba(10, 10, 10, 0.491);
+  }
+  .inactive-menu:hover .bar1 {
+    transform: translate(-8px);
+  }
+  .inactive-menu:hover .bar2 {
+    transform: translate(8px);
+  }
+  .bar1.toggle-menu {
+    height: 1px;
+    transform: rotate(-45deg) translate(-1px, 2px);
+  }
+  .bar2.toggle-menu {
+    height: 1px;
+    transform: rotate(45deg) translate(-2px, -3px);
+  }
+  .active-menu {
+    background: #f4f4f4;
+    /* box-shadow: 0 .3px .5px rgba(10, 10, 10, 0.491); */
+  }
+  .active-menu .bar1,
+  .active-menu .bar2 {
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .menu-bars {
+    position: fixed;
+    top: 47vh;
+    left: 1rem;
+    width: 50px;
+    height: 50px;
+  }
+  .bar1 {
+    margin-top: 1rem;
+  }
+  .bar2 {
+    margin-bottom: 1rem;
+  }
+  .bar1,
+  .bar2 {
+    width: 25px;
+    height: 2px;
+    box-shadow: 0 0.3px 0.5px rgba(10, 10, 10, 0.491);
+  }
+  .bar1.toggle-menu {
+    height: 2px;
+    transform: rotate(-45deg) translate(-3px, 3px);
+  }
+  .bar2.toggle-menu {
+    height: 2px;
+    transform: rotate(45deg) translate(-3px, -3px);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* .screen {
+    margin: 0 20rem 0 20rem;
+  } */
+}
